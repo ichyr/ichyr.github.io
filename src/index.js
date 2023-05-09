@@ -1,6 +1,6 @@
 const dbClient = require('./database');
 const fs = require('fs');
-const { saveVmilistData } = require('./vmilists');
+const { saveVmilistData, copyVmilistsAvatars } = require('./vmilists');
 
 const execute = async () => {
     const vmilistsRaw = fs.readFileSync(`${__dirname}/../json/enrichedVmilists.json`);
@@ -13,7 +13,8 @@ const execute = async () => {
     const specdataRaw = fs.readFileSync(`${__dirname}/../json/specdata.json`);
     const specdata = JSON.parse(specdataRaw);
 
-    saveVmilistData(vmilists, specializations);
+    saveVmilistData(vmilists);
+    copyVmilistsAvatars(vmilists);
 }
 
 execute();
