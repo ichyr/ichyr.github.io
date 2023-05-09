@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-________________-_.jpg
+![Відзначка](../images/Hotovnist_do_nadzvychainykh_sytuatsii_II/________________-_.jpg)
 
 ## Вимоги до юнацтва
 

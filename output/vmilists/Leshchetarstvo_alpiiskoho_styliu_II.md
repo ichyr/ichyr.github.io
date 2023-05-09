@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-____________1.jpg
+![Відзначка](../images/Leshchetarstvo_alpiiskoho_styliu_II/____________1.jpg)
 
 ## Вимоги до юнацтва
 

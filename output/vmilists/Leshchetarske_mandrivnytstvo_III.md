@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-____________3.jpg
+![Відзначка](../images/Leshchetarske_mandrivnytstvo_III/____________3.jpg)
 
 ## Вимоги до юнацтва
 

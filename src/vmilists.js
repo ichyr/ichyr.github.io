@@ -12,7 +12,7 @@ const renderVmilistMarkdown = (template, vmilist) => {
     return render(template, vmilist);
 }
 
-const saveFile = (content, folder,fileName, fileExtension) => {
+const saveFile = (content, folder, fileName, fileExtension) => {
     const folderExists = fs.existsSync(`${__dirname}/${folder}`);
     fs.writeFileSync(`${__dirname}/${folder}/${fileName}.${fileExtension}`, content);
 }
@@ -26,19 +26,18 @@ exports.saveVmilistData = (vmilists) => {
 
 exports.copyVmilistsAvatars = (vmilists) => {
     vmilists.forEach(vmilist => {
-        // create directory vmilistEnName/
         vmilists.forEach(vmilist => {
-            var targetDir = `${__dirname}/../output/image/${vmilist.en_name}/`;
+            var targetDir = `${__dirname}/../output/images/${vmilist.en_name}/`;
 
-            if (!fs.existsSync(targetDir)){
+            if (!fs.existsSync(targetDir)) {
                 fs.mkdirSync(targetDir, { recursive: true });
             }
 
             var sourceDir = `${__dirname}/../vmilistAvatars/${vmilist.id}/`;
-            
+
             copyRecursiveSync(sourceDir, targetDir);
         })
-        
+
     });
 }
 
@@ -47,16 +46,20 @@ exports.copyVmilistsAvatars = (vmilists) => {
  * @param {string} src  The path to the thing to copy.
  * @param {string} dest The path to the new copy.
  */
-var copyRecursiveSync = function(src, dest) {
-  var exists = fs.existsSync(src);
-  var stats = exists && fs.statSync(src);
-  var isDirectory = exists && stats.isDirectory();
-  if (isDirectory) {
-    fs.readdirSync(src).forEach(function(childItemName) {
-      copyRecursiveSync(path.join(src, childItemName),
-                        path.join(dest, childItemName));
-    });
-  } else {
-    fs.copyFileSync(src, dest);
-  }
+var copyRecursiveSync = function (src, dest) {
+    var exists = fs.existsSync(src);
+    var stats = exists && fs.statSync(src);
+    var isDirectory = exists && stats.isDirectory();
+    try {
+        if (isDirectory) {
+            fs.readdirSync(src).forEach(function (childItemName) {
+                copyRecursiveSync(path.join(src, childItemName),
+                    path.join(dest, childItemName));
+            });
+        } else {
+            fs.copyFileSync(src, dest);
+        }
+    } catch (err) {
+        console.log('No folder = ', src);
+    }
 };

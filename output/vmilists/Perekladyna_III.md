@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-emblem-07.png
+![Відзначка](../images/Perekladyna_III/emblem-07.png)
 
 ## Вимоги до юнацтва
 

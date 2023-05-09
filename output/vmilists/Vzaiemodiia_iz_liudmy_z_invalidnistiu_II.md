@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-_________-3.jpg
+![Відзначка](../images/Vzaiemodiia_iz_liudmy_z_invalidnistiu_II/_________-3.jpg)
 
 ## Вимоги до юнацтва
 

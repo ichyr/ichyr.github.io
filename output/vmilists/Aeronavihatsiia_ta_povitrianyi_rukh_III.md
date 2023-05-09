@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-______________3.png
+![Відзначка](../images/Aeronavihatsiia_ta_povitrianyi_rukh_III/______________3.png)
 
 ## Вимоги до юнацтва
 

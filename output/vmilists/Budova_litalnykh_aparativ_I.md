@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-____1.png
+![Відзначка](../images/Budova_litalnykh_aparativ_I/____1.png)
 
 ## Вимоги до юнацтва
 

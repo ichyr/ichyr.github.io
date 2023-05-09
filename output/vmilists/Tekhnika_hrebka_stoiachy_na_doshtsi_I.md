@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-______________1.jpg
+![Відзначка](../images/Tekhnika_hrebka_stoiachy_na_doshtsi_I/______________1.jpg)
 
 ## Вимоги до юнацтва
 

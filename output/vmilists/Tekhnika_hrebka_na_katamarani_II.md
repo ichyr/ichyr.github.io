@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-_______2.jpg
+![Відзначка](../images/Tekhnika_hrebka_na_katamarani_II/_______2.jpg)
 
 ## Вимоги до юнацтва
 

@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-____________2.jpg
+![Відзначка](../images/Leshchetarstvo_nordiiskoho_styliu_III/____________2.jpg)
 
 ## Вимоги до юнацтва
 

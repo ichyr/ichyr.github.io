@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-emblem-08.png
+![Відзначка](../images/Sportovi_ihry_I/emblem-08.png)
 
 ## Вимоги до юнацтва
 

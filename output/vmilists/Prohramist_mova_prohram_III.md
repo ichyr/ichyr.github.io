@@ -18,7 +18,7 @@
 
 ## Відзначка
 
-
+![Відзначка](../images/Prohramist_mova_prohram_III/)
 
 ## Вимоги до юнацтва
 
