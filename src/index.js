@@ -14,7 +14,7 @@ const execute = async () => {
     const specdata = JSON.parse(specdataRaw);
 
     saveVmilistData(vmilists);
-    copyVmilistsAvatars(vmilists);
+    // copyVmilistsAvatars(vmilists);
 }
 
 execute();
