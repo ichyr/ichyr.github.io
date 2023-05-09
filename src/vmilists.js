@@ -28,13 +28,13 @@ exports.copyVmilistsAvatars = (vmilists) => {
     vmilists.forEach(vmilist => {
         // create directory vmilistEnName/
         vmilists.forEach(vmilist => {
-            var targetDir = `${__dirname}/../output/image/${vmilist.en_name}`;
+            var targetDir = `${__dirname}/../output/image/${vmilist.en_name}/`;
 
             if (!fs.existsSync(targetDir)){
                 fs.mkdirSync(targetDir, { recursive: true });
             }
 
-            var sourceDir = `${__dirname}/../../aws/uploads/vmilist/${vmilist.id}`;
+            var sourceDir = `${__dirname}/../vmilistAvatars/${vmilist.id}/`;
             
             copyRecursiveSync(sourceDir, targetDir);
         })
@@ -52,7 +52,6 @@ var copyRecursiveSync = function(src, dest) {
   var stats = exists && fs.statSync(src);
   var isDirectory = exists && stats.isDirectory();
   if (isDirectory) {
-    fs.mkdirSync(dest);
     fs.readdirSync(src).forEach(function(childItemName) {
       copyRecursiveSync(path.join(src, childItemName),
                         path.join(dest, childItemName));
