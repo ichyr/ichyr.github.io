@@ -5,11 +5,12 @@ const { render } = require("mustache");
 const translit = require('ua-en-translit');
 
 let vmilistMarkdownTemplate = fs.readFileSync("./src/templates/vmilist.md").toString()
-let vmilistHTMLTemplate;
+let vmilistHTMLTemplate = fs.readFileSync("./src/templates/vmilist.html").toString();
+let indexHTMLTemplate = fs.readFileSync("./src/templates/index.html").toString();
 let vmilistJSONTemplate;
 
-const renderVmilistMarkdown = (template, vmilist) => {
-    return render(template, vmilist);
+const renderTemplate = (template, content) => {
+    return render(template, content);
 }
 
 const saveFile = (content, folder, fileName, fileExtension) => {
@@ -17,11 +18,37 @@ const saveFile = (content, folder, fileName, fileExtension) => {
     fs.writeFileSync(`${__dirname}/${folder}/${fileName}.${fileExtension}`, content);
 }
 
+const createIndexHTML = (vmilists) => {
+    const specializations = vmilists.reduce((acc, vmilist) => {
+        if (!acc[vmilist.specialization_name]) {
+            acc[vmilist.specialization_name] = {
+                name: vmilist.specialization_name,
+                vmilists: []
+            };
+        }
+        acc[vmilist.specialization_name].vmilists.push(vmilist);
+        return acc;
+    }, {});
+
+    const specData = {
+        'specializations': Object.values(specializations)
+    }
+
+    const indexPage = renderTemplate(indexHTMLTemplate, specData);
+    saveFile(indexPage, '../output/vmilists', 'index', 'html');
+
+}
+
 exports.saveVmilistData = (vmilists) => {
     vmilists.forEach(vmilist => {
-        const vmilistMDContent = renderVmilistMarkdown(vmilistMarkdownTemplate, vmilist);
+        const vmilistMDContent = renderTemplate(vmilistMarkdownTemplate, vmilist);
         saveFile(vmilistMDContent, '../output/vmilists', vmilist.en_name, 'md');
+
+        // const html = renderVmilistTemplate(vmilistHTMLTemplate, vmilist);
+        // saveFile(html, '../output/vmilists', vmilist.en_name, 'html');
     });
+    
+    createIndexHTML(vmilists);
 }
 
 exports.copyVmilistsAvatars = (vmilists) => {

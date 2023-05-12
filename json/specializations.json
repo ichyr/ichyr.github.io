@@ -1,1 +1,114 @@
-[{"id":1,"name":"Військова","created_at":"2015-10-18T05:13:50.439Z","updated_at":"2016-01-09T10:52:02.670Z","avatar":"Emblem_R_VP.jpg","status":1},{"id":2,"name":"Рольового руху","created_at":"2015-10-18T15:26:05.561Z","updated_at":"2017-11-18T19:52:10.365Z","avatar":"XwxAcMOgbMQ.jpg","status":0},{"id":3,"name":"Сноубординг та лещетарство","created_at":"2015-10-18T18:05:29.480Z","updated_at":"2015-11-29T20:59:47.739Z","avatar":"____________.jpg","status":0},{"id":4,"name":"Альпінізм та скелелазіння","created_at":"2015-10-18T18:50:19.006Z","updated_at":"2015-11-25T16:36:51.469Z","avatar":"12233018_561490527339423_1826130470_n.jpg","status":0},{"id":5,"name":"Мандрівництво","created_at":"2015-10-18T19:01:26.367Z","updated_at":"2017-04-10T18:34:00.806Z","avatar":"5409254618_a66396fc96_m.jpg","status":0},{"id":6,"name":"Морська","created_at":"2015-10-19T06:22:41.242Z","updated_at":"2016-05-15T08:31:33.819Z","avatar":"1258665058_navigara_chm-chkh.jpg","status":0},{"id":7,"name":"Летунська","created_at":"2015-10-28T08:45:21.852Z","updated_at":"2015-11-07T20:24:16.860Z","avatar":"Transport.png","status":0},{"id":8,"name":"Етнографічна","created_at":"2015-10-29T08:29:13.291Z","updated_at":"2016-01-24T15:27:13.874Z","avatar":"___51133_-______.jpg","status":0},{"id":9,"name":"Спортивна","created_at":"2015-10-30T11:30:04.327Z","updated_at":"2016-01-26T21:04:30.717Z","avatar":"images.png","status":0},{"id":10,"name":"Кінна","created_at":"2015-10-31T09:01:28.818Z","updated_at":"2015-11-22T20:19:51.483Z","avatar":"thumb_default.gif","status":0},{"id":11,"name":"Мистецька","created_at":"2015-10-31T11:26:58.172Z","updated_at":"2020-05-30T12:54:39.935Z","avatar":"81B5FB54-7176-4D54-9B3D-B67CC54E59B1.png","status":0},{"id":12,"name":"Екологічна","created_at":"2015-11-02T18:10:10.401Z","updated_at":"2015-11-22T10:26:01.614Z","avatar":"thumb_default.gif","status":0},{"id":13,"name":"Велосипедна","created_at":"2015-12-26T09:17:52.003Z","updated_at":"2015-12-29T10:36:06.328Z","avatar":"________.jpg","status":0},{"id":14,"name":"Загальні вмілості","created_at":"2016-05-23T10:06:18.933Z","updated_at":"2016-05-23T10:09:08.630Z","avatar":"Plast_National_Scout_Organization.jpg","status":0}]
+[
+    {
+        "id": 1,
+        "name": "Військова",
+        "created_at": "2015-10-18T05:13:50.439Z",
+        "updated_at": "2016-01-09T10:52:02.670Z",
+        "avatar": "Emblem_R_VP.jpg",
+        "status": 1
+    },
+    {
+        "id": 2,
+        "name": "Рольового руху",
+        "created_at": "2015-10-18T15:26:05.561Z",
+        "updated_at": "2017-11-18T19:52:10.365Z",
+        "avatar": "XwxAcMOgbMQ.jpg",
+        "status": 0
+    },
+    {
+        "id": 3,
+        "name": "Сноубординг та лещетарство",
+        "created_at": "2015-10-18T18:05:29.480Z",
+        "updated_at": "2015-11-29T20:59:47.739Z",
+        "avatar": "____________.jpg",
+        "status": 0
+    },
+    {
+        "id": 4,
+        "name": "Альпінізм та скелелазіння",
+        "created_at": "2015-10-18T18:50:19.006Z",
+        "updated_at": "2015-11-25T16:36:51.469Z",
+        "avatar": "12233018_561490527339423_1826130470_n.jpg",
+        "status": 0
+    },
+    {
+        "id": 5,
+        "name": "Мандрівництво",
+        "created_at": "2015-10-18T19:01:26.367Z",
+        "updated_at": "2017-04-10T18:34:00.806Z",
+        "avatar": "5409254618_a66396fc96_m.jpg",
+        "status": 0
+    },
+    {
+        "id": 6,
+        "name": "Морська",
+        "created_at": "2015-10-19T06:22:41.242Z",
+        "updated_at": "2016-05-15T08:31:33.819Z",
+        "avatar": "1258665058_navigara_chm-chkh.jpg",
+        "status": 0
+    },
+    {
+        "id": 7,
+        "name": "Летунська",
+        "created_at": "2015-10-28T08:45:21.852Z",
+        "updated_at": "2015-11-07T20:24:16.860Z",
+        "avatar": "Transport.png",
+        "status": 0
+    },
+    {
+        "id": 8,
+        "name": "Етнографічна",
+        "created_at": "2015-10-29T08:29:13.291Z",
+        "updated_at": "2016-01-24T15:27:13.874Z",
+        "avatar": "___51133_-______.jpg",
+        "status": 0
+    },
+    {
+        "id": 9,
+        "name": "Спортивна",
+        "created_at": "2015-10-30T11:30:04.327Z",
+        "updated_at": "2016-01-26T21:04:30.717Z",
+        "avatar": "images.png",
+        "status": 0
+    },
+    {
+        "id": 10,
+        "name": "Кінна",
+        "created_at": "2015-10-31T09:01:28.818Z",
+        "updated_at": "2015-11-22T20:19:51.483Z",
+        "avatar": "thumb_default.gif",
+        "status": 0
+    },
+    {
+        "id": 11,
+        "name": "Мистецька",
+        "created_at": "2015-10-31T11:26:58.172Z",
+        "updated_at": "2020-05-30T12:54:39.935Z",
+        "avatar": "81B5FB54-7176-4D54-9B3D-B67CC54E59B1.png",
+        "status": 0
+    },
+    {
+        "id": 12,
+        "name": "Екологічна",
+        "created_at": "2015-11-02T18:10:10.401Z",
+        "updated_at": "2015-11-22T10:26:01.614Z",
+        "avatar": "thumb_default.gif",
+        "status": 0
+    },
+    {
+        "id": 13,
+        "name": "Велосипедна",
+        "created_at": "2015-12-26T09:17:52.003Z",
+        "updated_at": "2015-12-29T10:36:06.328Z",
+        "avatar": "________.jpg",
+        "status": 0
+    },
+    {
+        "id": 14,
+        "name": "Загальні вмілості",
+        "created_at": "2016-05-23T10:06:18.933Z",
+        "updated_at": "2016-05-23T10:09:08.630Z",
+        "avatar": "Plast_National_Scout_Organization.jpg",
+        "status": 0
+    }
+]

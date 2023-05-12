@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}</title>
+
+    <style>
+        #additional_information {
+            border-spacing: 32px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">Вмілість {{name}}</h1>
+
+    <table id="additional_information">
+        <tr>
+            <td rowspan="6">
+                <img src="{{avatarThumbRelativePath}}" />
+            </td>
+        </tr>
+        <tr>
+            <td>Спеціалізація</td>
+            <td>{{specialization_name}}</td>
+        </tr>
+
+        <tr>
+            <td>Статус вмілості</td>
+            <td>{{status}}</td>
+        </tr>
+
+        <tr>
+            <td>Рівень проби</td>
+            <td>{{level}}</td>
+        </tr>
+
+        <tr>
+            <td>Код на badgecraft.eu</td>
+            <td>{{badgecraft_code}}</td>
+        </tr>
+
+        <tr>
+            <td>Остання зміна до інформації</td>
+            <td>{{lastUpdatedAt}}</td>
+        </tr>
+    </table>
+
+    <h2 id="child_info">
+        Вимоги до здобувача вмілості
+    </h2>
+
+    {{{child_info}}}
+
+    <h2 id="instructor_info">Вимоги до інструктора</h2>
+
+    {{{instructor_info}}}
+    
+
+</body>
+</html>
