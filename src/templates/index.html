@@ -5,21 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Реєстр вмілостей УПЮ</title>
+
+    <style>
+        .vmilist {
+            display: flex; 
+            margin-bottom: 8px;
+            align-items: center;
+            font-size: 24px;
+            max-width: 50%;
+        }
+
+        .vmilist img {
+            width: 48px;
+            margin-right: 16px;
+        }
+
+        .vmilist:hover {
+            background-color: steelblue; 
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    </style>
 </head>
 <body>
 
-    {{specializations[0].name}}
-
+    <h1>Реєстр вмілостей КБ УПЮ України</h1>
 
     {{#specializations}}
-    <h2 id={{name}}>{{name}}</h2>
+    <h2 id={{name}}>{{name}} спеціалізація</h2>
 
-        {{#vmilists}}
-            <a style="display: flex;" href={{ownHref}}>
-                <img src={{vmilistThumbRelativePath}} />
-                {{name}}
-            </div>
-        {{/vmilists}}
+        <div class="wrapper">
+
+            {{#vmilists}}
+                <a class="vmilist" href="{{ownHTMLHref}}">
+                    <img src="{{avatarThumbRelativePath}}" />
+                    {{name}}
+                </a>
+            {{/vmilists}}
+
+        </div>
+
     {{/specializations}}
     
 </body>

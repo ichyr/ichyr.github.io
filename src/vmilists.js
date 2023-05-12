@@ -44,8 +44,8 @@ exports.saveVmilistData = (vmilists) => {
         const vmilistMDContent = renderTemplate(vmilistMarkdownTemplate, vmilist);
         saveFile(vmilistMDContent, '../output/vmilists', vmilist.en_name, 'md');
 
-        // const html = renderVmilistTemplate(vmilistHTMLTemplate, vmilist);
-        // saveFile(html, '../output/vmilists', vmilist.en_name, 'html');
+        const html = renderTemplate(vmilistHTMLTemplate, vmilist);
+        saveFile(html, '../output/vmilists', vmilist.en_name, 'html');
     });
     
     createIndexHTML(vmilists);
